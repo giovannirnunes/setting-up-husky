@@ -1,1 +1,2 @@
 npm test
+talisman --githook pre-commit
