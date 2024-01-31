@@ -1,2 +1,7 @@
 npm test
-talisman --githook pre-commit
+if [ "$( which talisman )" != "" ]; then
+   talisman --githook pre-commit
+else
+   echo 'Install Talisman'
+   exit 1 
+fi
